@@ -1,0 +1,65 @@
+/* #region General */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+/* #endregion General */
+
+/* #region Utilities */
+.debug{
+    border: 2px dashed;
+}
+
+:root{
+    --upgrade-bg: #080b12;
+    --sidebar-bg: #000000;
+    --content-bg: #141922;
+    --bottom-bg: #282828;
+    --sidebar-text: #707070;
+    --sidebar-icons: #a3a3a3;
+
+}
+/* #endregion Utilities */
+
+/* #region Top */
+#top{
+    height: calc(100% - 80px)
+}
+
+/* #region Upgrade */
+/* #upgrade{
+    width: calc(100% - 245px);
+    height: 80px;
+} */
+/* #endregion Upgrade */
+
+/* #region Content */
+
+/* #endregion Content */
+
+/* #region Sidebar */
+#sidebar{
+    width: 245px;
+    height: 100%;
+}
+/* #endregion Sidebar */
+
+/* #endregion Top */
+
+/* #region Bottom */
+#bottom{
+    height: 80px;
+}
+/* #endregion Bottom */
+
+
