@@ -10,8 +10,8 @@ img{
 }
 
 body{
-    height: 100vh;
-    overflow: hidden;
+    /* height: 100vh; */
+    /* overflow: hidden; */
 }
 /* #endregion General */
 
@@ -44,6 +44,7 @@ body{
 
 .col-2{
     width: calc(100% / 12 * 2);
+    padding: 1rem;
 }
 /* #endregion Utilities */
 
@@ -53,12 +54,20 @@ body{
     display: flex;
 }
 
+/* #region Sidebar */
+#sidebar{
+    width: 245px;
+    height: 100%;
+    background-color: yellow;
+}
+/* #endregion Sidebar */
+
 /* #region Content */
 #content{
     width: calc(100% - 245px);
     background-color: blue;
 }
-/* #endregion Content */
+
 
 /* #region Upgrade */
 #upgrade{
@@ -82,17 +91,25 @@ body{
     column-gap: 2rem;
     row-gap: 3rem;
 }
-/* #region Navigation */
+/* #endregion Navigation */
 
 
-
-/* #region Sidebar */
-#sidebar{
-    width: 245px;
-    height: 100%;
-    background-color: yellow;
+.preview{
+    text-align: center;
 }
-/* #endregion Sidebar */
+
+.title-section{
+    padding: 3rem 1rem 1rem;
+    h2{
+        line-height: 3rem;
+    }
+}
+
+.round-pics{
+    border-radius: 50%;
+}
+
+/* #endregion Content */
 
 /* #endregion Top */
 
