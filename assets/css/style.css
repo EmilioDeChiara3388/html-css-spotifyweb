@@ -143,12 +143,33 @@ img{
 /* #endregion Bottom */
 
 /* #region Media Query */
+
+/* #region Media md (700px) */
 @media screen and (max-width: 700px){
     .col-3-md{
         width: calc(100% / 12 * 3);
     }
 
     .navigation{
+        /* column-gap: ; */
         row-gap: 1rem;
     }
 }
+/* #endregion Media md (700px) */
+
+/* #region Media s (600px) */
+@media screen and (max-width: 600px){
+    .col-6-s{
+        width: 50%
+    }
+
+    .navigation{
+        row-gap: 1rem;
+    }
+}
+/* #endregion Media s (600px) */
+
+
+/* #endregion Media Query */
+
+
