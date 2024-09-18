@@ -50,6 +50,10 @@ main{
     width: calc(100% / 12 * 2);
     padding: 1rem;
 }
+
+.col-12{
+    width: 100%
+}
 /* #endregion Utilities */
 
 /* #region Top */
@@ -156,6 +160,7 @@ main{
 #bottom{
     height: 80px;
     background-color: fuchsia;
+    z-index: 1000;
 }
 /* #endregion Bottom */
 
@@ -182,8 +187,14 @@ main{
 }
 /* #endregion Media s (600px) */
 
-/* #region Media xs (480px) */
-@media screen and (max-width: 480px){
+/* #region Media xs (400px) */
+@media screen and (max-width: 400px){
+
+    #content{
+        width: calc(100% - 40px);
+        background-color: blue;
+    }
+
     #sidebar{
         width: 40px;
         /* height: 100%; */
@@ -219,7 +230,7 @@ main{
         display: none;
     }
 }
-/* #endregion Media xs (480px) */
+/* #endregion Media xs (400px) */
 
 
 
