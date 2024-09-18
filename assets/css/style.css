@@ -13,10 +13,10 @@ body{
     height: 100vh;
     overflow: hidden;
 }
-main{
+/* main{
     height: 100%;
-    /* overflow-y: auto; */
-}
+    overflow-y: auto; -- cancella
+} */
 
 #content{
     overflow-y: auto;
@@ -69,8 +69,9 @@ main{
 /* #region Sidebar */
 #sidebar{
     width: 245px;
-    height: 100%;
-    background-color: yellow;
+    /* height: 100vh; */
+    background-color: black;
+    position: relative;
 }
 
 #logo{
@@ -99,12 +100,63 @@ main{
 }
 
 .playlist{
+    display: flex;
+    flex-direction: column;
     padding-left: 1.5rem;
     line-height: 2rem;
 }
 
 .name{
     text-decoration: none;
+}
+
+.low-sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* padding-left: 1rem; */
+    position: absolute;
+    bottom: 2%;
+}
+
+.download{
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+#download-icon{
+    width: 25px;
+    vertical-align: middle;
+}
+
+#download-text{
+    text-decoration: none;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+hr{
+    display: block;
+}
+
+.user{
+    padding-top: 1rem;
+    padding-left: 1.25rem;
+}
+
+#user-icon{
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+#user-text{
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    vertical-align: middle;
 }
 /* #endregion Sidebar */
 
