@@ -72,6 +72,7 @@ body{
     /* height: 100vh; */
     background-color: black;
     position: relative;
+    overflow: hidden;
 }
 
 #logo{
@@ -86,6 +87,7 @@ body{
 .menu-sidebar{
     display: flex;
     align-items: center;
+    flex-shrink: 3;
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
@@ -102,8 +104,27 @@ body{
 .playlist{
     display: flex;
     flex-direction: column;
+    flex-shrink: 3;
     padding-left: 1.5rem;
     line-height: 2rem;
+
+    h3{
+        color: white;
+    }
+}
+
+.create-playlist{
+    text-decoration: none;
+    color: var(--sidebar-text);
+    font-size: 1.25rem;
+}
+
+#playlist-icon{
+    background-color: var(--sidebar-text);
+    color: var(--sidebar-bg);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .name{
@@ -157,6 +178,14 @@ hr{
     color: white;
     font-size: 1.25rem;
     vertical-align: middle;
+}
+
+.choises, .name, #download-text{
+    color: var(--sidebar-text);
+}
+
+.icons-sidebar, #dowload-icon{
+    color: var(--sidebar-icons);
 }
 /* #endregion Sidebar */
 
