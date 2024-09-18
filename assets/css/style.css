@@ -15,7 +15,7 @@ body{
 }
 /* main{
     height: 100%;
-    overflow-y: auto; -- cancella
+    overflow-y: auto;
 } */
 
 #content{
@@ -279,9 +279,21 @@ hr{
 
 /* #region Bottom */
 #bottom{
+    display: flex;
+    flex-wrap: wrap;
     height: 80px;
     background-color: fuchsia;
-    z-index: 1000;
+    /* z-index: 1000; */
+}
+
+.moovie{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#moovie-pic{
+    width: 25%;
+    padding: 1rem;
 }
 /* #endregion Bottom */
 
