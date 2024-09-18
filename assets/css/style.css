@@ -12,6 +12,7 @@ img{
 body{
     height: 100vh;
     overflow: hidden;
+    font-family: Montserrat;
 }
 /* main{
     height: 100%;
@@ -316,14 +317,28 @@ hr{
 }
 
 .time-passed, .time-total{
+    font-size: 0.75rem;
+    padding: 0 1rem;
     color: white;
     align-self: center;
 }
 
 .play-icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 0.5rem;
     color: white;
-    padding: 0.5rem 7rem;
-    /* border-bottom: 5px solid white; */
+    padding: 0.5rem;
+}
+
+.ttt{
+    text-align: center;
+}
+
+.play-bar{
+    display: flex;
+
 }
 
 .bottom-icons{
@@ -332,6 +347,24 @@ hr{
 
 .fa-circle-play{
     font-size: 1.5rem;
+}
+
+.play-light-bar{
+    align-self: center;
+    margin-left: 1rem;
+    width: 5rem;
+    height: 4px;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+}
+
+.play-gray-bar{
+    align-self: center;
+    margin-right: 1rem;
+    width: 15rem;
+    height: 4px;
+    border: 3px solid gray;
+    border-radius: 20px;
 }
 
 .settings{
@@ -349,7 +382,7 @@ hr{
     align-self: center;
     margin-left: 1rem;
     width: 2rem;
-    height: 5px;
+    height: 4px;
     border: 3px solid lightgray;
     border-radius: 20px;
 }
@@ -358,7 +391,7 @@ hr{
     align-self: center;
     margin-right: 1rem;
     width: 5rem;
-    height: 5px;
+    height: 4px;
     border: 3px solid gray;
     border-radius: 20px;
 }
