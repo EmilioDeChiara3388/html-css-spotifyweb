@@ -15,6 +15,10 @@ body{
 }
 main{
     height: 100%;
+    /* overflow-y: auto; */
+}
+
+#content{
     overflow-y: auto;
 }
 /* #endregion General */
@@ -65,7 +69,7 @@ main{
 /* #region Sidebar */
 #sidebar{
     width: 245px;
-    /* height: calc(100% - 80px); */
+    height: 100%;
     background-color: yellow;
 }
 
