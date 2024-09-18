@@ -42,7 +42,7 @@ body{
     width: 100%;
     height: calc(100% - 80px);
     /* margin-left: 245px; */
-    background-color: red;
+    background-color: var(--content-bg);
 }
 
 .row{
@@ -52,7 +52,7 @@ body{
 
 .col-2{
     width: calc(100% / 12 * 2);
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .col-12{
@@ -195,7 +195,7 @@ hr{
 /* #region Content */
 #content{
     width: calc(100% - 245px);
-    background-color: blue;
+    background-color: var(--content-bg);
 }
 
 
@@ -251,10 +251,21 @@ hr{
 }
 
 .title-section{
-    padding: 3rem 1rem 1rem;
+    padding: 1.5rem 1rem;
     h2{
-        line-height: 3rem;
+        color: white;
     }
+}
+
+.elements{
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.detail{
+    color: var(--sidebar-text);
 }
 
 .round-pics{
