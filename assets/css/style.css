@@ -137,9 +137,6 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    /* justify-content: flex-end; */
-    /* padding-left: 1rem; */
-    background-color: pink;
 }
 
 .download{
@@ -281,10 +278,9 @@ hr{
     display: flex;
     flex-wrap: wrap;
     height: 80px;
-    background-color: fuchsia;
+    background-color: var(--bottom-bg);
     align-items: center;
     justify-content: space-between;
-    /* z-index: 1000; */
 }
 
 .moovie{
@@ -299,8 +295,21 @@ hr{
 }
 
 .description{
-    align-items: center;
+    align-content: center;
     margin-left: 0.5rem;
+    h5{
+        color: white;
+    }
+    span{
+        font-size: 0.75rem;
+        color: var(--sidebar-text);
+    }
+}
+
+.description-icons{
+    align-content: center;
+    margin-left: 2rem;
+    color: var(--sidebar-text);
 }
 /* #endregion Bottom */
 
