@@ -69,10 +69,12 @@ body{
 /* #region Sidebar */
 #sidebar{
     width: 245px;
+    display: flex;
+    flex-direction: column;
     /* height: 100vh; */
     background-color: black;
-    position: relative;
     overflow: hidden;
+    overflow-y: auto;
 }
 
 #logo{
@@ -87,7 +89,6 @@ body{
 .menu-sidebar{
     display: flex;
     align-items: center;
-    flex-shrink: 3;
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
@@ -104,7 +105,7 @@ body{
 .playlist{
     display: flex;
     flex-direction: column;
-    flex-shrink: 3;
+    flex-grow: 1;
     padding-left: 1.5rem;
     line-height: 2rem;
 
@@ -138,8 +139,6 @@ body{
     width: 100%;
     /* justify-content: flex-end; */
     /* padding-left: 1rem; */
-    position: absolute;
-    bottom: 2%;
     background-color: pink;
 }
 
@@ -283,6 +282,8 @@ hr{
     flex-wrap: wrap;
     height: 80px;
     background-color: fuchsia;
+    align-items: center;
+    justify-content: space-between;
     /* z-index: 1000; */
 }
 
@@ -292,8 +293,14 @@ hr{
 }
 
 #moovie-pic{
-    width: 25%;
-    padding: 1rem;
+    width: 80px;
+    padding-left: 1rem;
+    
+}
+
+.description{
+    align-items: center;
+    margin-left: 0.5rem;
 }
 /* #endregion Bottom */
 
@@ -325,13 +332,11 @@ hr{
 
     #content{
         width: calc(100% - 40px);
-        background-color: blue;
     }
 
     #sidebar{
         width: 40px;
         /* height: 100%; */
-        background-color: yellow;
     }
     
     #logo{
