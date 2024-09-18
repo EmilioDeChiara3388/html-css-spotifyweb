@@ -279,7 +279,7 @@ hr{
     flex-wrap: wrap;
     height: 80px;
     background-color: var(--bottom-bg);
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -290,13 +290,11 @@ hr{
 
 #moovie-pic{
     width: 80px;
-    padding-left: 1rem;
-    
+    padding: 1rem;
 }
 
 .description{
     align-content: center;
-    margin-left: 0.5rem;
     h5{
         color: white;
     }
@@ -310,6 +308,59 @@ hr{
     align-content: center;
     margin-left: 2rem;
     color: var(--sidebar-text);
+}
+
+.play{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time-passed, .time-total{
+    color: white;
+    align-self: center;
+}
+
+.play-icons{
+    color: white;
+    padding: 0.5rem 7rem;
+    /* border-bottom: 5px solid white; */
+}
+
+.bottom-icons{
+    margin-left: 1rem;
+}
+
+.fa-circle-play{
+    font-size: 1.5rem;
+}
+
+.settings{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+}
+
+.settings-icons{
+    color: white;
+    margin-left: 2rem;
+}
+
+.settings-light-bar{
+    align-self: center;
+    margin-left: 1rem;
+    width: 2rem;
+    height: 5px;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+}
+
+.settings-gray-bar{
+    align-self: center;
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5px;
+    border: 3px solid gray;
+    border-radius: 20px;
 }
 /* #endregion Bottom */
 
