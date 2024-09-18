@@ -98,6 +98,10 @@ body{
     width: 30px;
 }
 
+.home{
+    border-left: 4px solid green;
+}
+
 .choises{
     text-decoration: none;
     padding-left: 1rem;
@@ -280,7 +284,6 @@ hr{
     flex-wrap: wrap;
     height: 80px;
     background-color: var(--bottom-bg);
-    /* align-items: center; */
     justify-content: space-between;
 }
 
@@ -318,7 +321,7 @@ hr{
 
 .time-passed, .time-total{
     font-size: 0.75rem;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     color: white;
     align-self: center;
 }
@@ -332,7 +335,7 @@ hr{
     padding: 0.5rem;
 }
 
-.ttt{
+.control{
     text-align: center;
 }
 
@@ -375,7 +378,7 @@ hr{
 
 .settings-icons{
     color: white;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .settings-light-bar{
