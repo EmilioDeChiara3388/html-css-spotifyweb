@@ -70,9 +70,11 @@ body{
 /* #region Sidebar */
 #sidebar{
     width: 245px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
+    justify-content: space-between;
+    padding-left: 1rem;
     background-color: black;
     overflow: hidden;
     /* overflow-y: auto; */
@@ -80,36 +82,51 @@ body{
 
 #logo{
     width: 70%;
-    padding: 1rem;
+    margin: 1rem 0;
 }
 
 #logo-xs{
     display: none;
 }
 
-.menu-sidebar{
+.list-sidebar{
+    list-style: none;
+    li{
+        margin-bottom: 0.5rem;
+        
+        h3{
+            color: white;
+            margin-top: 1rem;
+        }
+        .icons-sidebar, .choises{
+            vertical-align: middle;
+        }
+    }
+
+}
+
+/* .menu-sidebar{
     display: flex;
     align-items: center;
     padding-left: 1rem;
     padding-bottom: 1rem;
-}
+} */
 
 .icons-sidebar{
     width: 30px;
 }
 
-#vertical-line{
+/* #vertical-line{
     width: 3px;
     height: 25px;
     background-color: green;
-}
+} */
 
 .choises{
     text-decoration: none;
-    padding-left: 1rem;
 }
 
-.playlist{
+/* .playlist{
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -119,7 +136,7 @@ body{
     h3{
         color: white;
     }
-}
+} */
 
 .create-playlist{
     text-decoration: none;
@@ -139,17 +156,17 @@ body{
     text-decoration: none;
 }
 
-.low-sidebar{
+/* .low-sidebar{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-}
+} */
 
-.download{
+/* .download{
     padding-bottom: 1rem;
     padding-left: 1rem;
-}
+} */
 
 #download-icon{
     width: 25px;
@@ -164,16 +181,21 @@ body{
 }
 
 hr{
-    width: 80%;
-    margin: auto;
+    width: 90%;
+    margin: 1rem 0;
 }
 
-.user{
+/* .user{
     padding-top: 1rem;
     padding-left: 1.25rem;
-}
+} */
+
+/* #user{
+    margin-top: 1.2rem;
+} */
 
 #user-icon{
+    /* margin-top: 1rem; */
     width: 20px;
     background-color: gray;
     border-radius: 50%;
@@ -181,6 +203,7 @@ hr{
 }
 
 .user-text{
+    /* margin-top: 0.5rem; */
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
