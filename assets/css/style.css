@@ -317,6 +317,32 @@ hr{
     text-align: center;
 }
 
+.video{
+    position: relative;
+}
+
+
+
+.pic-icon{
+    display: none;
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    top: 40%;
+    left: 50%;
+    transform: -50%;
+    translate: -50%;
+}
+
+.video:hover{
+    .pic-icon{
+        display: inline-block;
+    }
+    .pic{
+        filter: brightness(0.25)
+    }
+}
+
 
 
 .title-section{
@@ -422,7 +448,7 @@ hr{
     margin-left: 1rem;
 }
 
-.fa-circle-play{
+#play-bottom{
     font-size: 1.5rem;
 }
 
