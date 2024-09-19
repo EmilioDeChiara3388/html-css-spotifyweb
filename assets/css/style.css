@@ -75,7 +75,7 @@ body{
     /* height: 100vh; */
     background-color: black;
     overflow: hidden;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 #logo{
@@ -98,8 +98,10 @@ body{
     width: 30px;
 }
 
-.home{
-    border-left: 4px solid green;
+#vertical-line{
+    width: 3px;
+    height: 25px;
+    background-color: green;
 }
 
 .choises{
@@ -220,14 +222,20 @@ hr{
 
 /* #region Upgrade */
 #upgrade{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: right;
+    align-content: center; */
+    text-align: right;
     align-content: center;
     width: 100%;
     height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
     padding-right: 0.25rem;
     background-color: var(--upgrade-bg);
+    opacity: 0.9;
 
     a{
         text-decoration: none;
@@ -269,8 +277,11 @@ hr{
     color: white;
 }
 
-#notice{
-    text-decoration: solid underline green 4px;
+#green-line{
+    width: 40%;
+    margin: auto;
+    height: 3px;
+    background-color:  green;
 }
 /* #endregion Navigation */
 
@@ -278,6 +289,8 @@ hr{
 .preview{
     text-align: center;
 }
+
+
 
 .title-section{
     padding: 1.5rem 1rem;
@@ -315,9 +328,14 @@ hr{
     justify-content: space-between;
 }
 
+.moovie, .play, .settings{
+    width: 33%;
+}
+
 .moovie{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
 }
 
 #moovie-pic{
@@ -344,7 +362,8 @@ hr{
 
 .play{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: center;
 }
 
 .time-passed, .time-total{
@@ -400,7 +419,7 @@ hr{
 
 .settings{
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-self: center;
 }
 
@@ -521,7 +540,7 @@ hr{
         display: none;
     }
 
-    #download-text, hr, #user-text{
+    .download-text, hr, #user-text{
         display: none;
     }
 }
