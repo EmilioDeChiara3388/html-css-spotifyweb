@@ -94,15 +94,15 @@ body{
     li{
         margin-bottom: 0.5rem;
         
-        h3{
-            color: white;
-            margin-top: 1rem;
-        }
         .icons-sidebar, .choises{
             vertical-align: middle;
         }
     }
+}
 
+#start-playlist{
+    color: white;
+    margin-top: 1rem;
 }
 
 #home{
@@ -543,7 +543,7 @@ hr{
     display: block;
 }
 
-.fa-circle-play:hover{
+#play-bottom:hover{
     font-size: 1.7rem;
     cursor: pointer;
 }
@@ -581,7 +581,10 @@ hr{
 
     #sidebar{
         width: 40px;
-        /* position: relative; */
+    }
+
+    .text{
+        display: none;
     }
 
     .low-sidebar{
@@ -608,21 +611,18 @@ hr{
     #logo-xs{
         display: block;
         width: 70%;
-        margin: 0.25rem auto 1rem;
+        margin: 0.5rem auto 1rem;
     }
     
-    .menu-sidebar{
-        display: flex;
-        flex-direction: column;
-        padding: 0.25rem;
-        padding-bottom: 1rem;
+    #upper-sidebar{
+        margin-right: 0.5rem;
+    }
+
+    #home{
+        border-left: none;
     }
 
     .choises{
-        display: none;
-    }
-    
-    .playlist{
         display: none;
     }
 
