@@ -105,6 +105,10 @@ body{
 
 }
 
+#home{
+    border-left: 3px solid green;
+}
+
 /* .menu-sidebar{
     display: flex;
     align-items: center;
@@ -431,6 +435,14 @@ hr{
     border-radius: 20px;
 }
 
+.dot-bar{
+    display: none;
+    background-color: lightgray;
+    width: 13px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
 .play-gray-bar{
     align-self: center;
     margin-right: 1rem;
@@ -460,6 +472,14 @@ hr{
     border-radius: 20px;
 }
 
+.dot-bar-sm{
+    display: none;
+    background-color: lightgray;
+    width: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
 .settings-gray-bar{
     align-self: center;
     margin-right: 1rem;
@@ -478,6 +498,23 @@ hr{
 .fa-heart:hover, .fa-folder:hover{
     color: white;
     cursor: pointer;
+}
+
+.play-bar:hover{
+    .play-light-bar{
+    border: 3px solid lightgreen;
+    }
+    .dot-bar{
+        display: block;
+    }
+}
+
+.settings-light-bar:hover{
+    border: 3px solid lightgreen;
+}
+
+.settings-light-bar:hover + .dot-bar-sm{
+    display: block;
 }
 
 .fa-circle-play:hover{
