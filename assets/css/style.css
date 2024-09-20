@@ -148,6 +148,7 @@ hr{
 
 #user-icon{
     width: 20px;
+    aspect-ratio: 1;
     background-color: gray;
     border-radius: 50%;
     vertical-align: middle;
@@ -401,7 +402,7 @@ hr{
 }
 
 #play-bottom{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .play-light-bar{
@@ -497,17 +498,27 @@ hr{
 }
 
 #play-bottom:hover{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 /* #endregion Bottom */
 
 /* #region Media Query */
 
+/* #region Media lg (850px) */
+
+/* #endregion Media lg (870px) */
+@media screen and (max-width: 870px){
+    .col-3-lg{
+        width: calc(100% / 12 * 3);
+    }
+
+}
+
 /* #region Media md (700px) */
 @media screen and (max-width: 700px){
-    .col-3-md{
-        width: calc(100% / 12 * 3);
+    .col-4-md{
+        width: calc(100% / 12 * 4);
     }
 
     .description-icons{
